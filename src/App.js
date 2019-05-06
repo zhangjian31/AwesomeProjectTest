@@ -9,7 +9,7 @@ export default class HelloWorldApp extends Component {
     return (
       // <Image source={pic} style={{width=200,height=100}}/>
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-          <Text>Hello, world! </Text>
+          <Text>Hello, world!</Text>
         </View>
     );
   }
