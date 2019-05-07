@@ -12,7 +12,7 @@ import {ABC} from './src/高度和宽度';
 import widthAndHeight from './src/高度和宽度';
 import 电影列表 from './src/电影列表';
 import 组件 from './src/组件';
-import 网易新闻 from './src/网易新闻';
+import 网易新闻 from './src/新闻/网易新闻';
 
 
 import {name as appName} from './app.json';
