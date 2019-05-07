@@ -13,7 +13,7 @@ export default class FixedDimensionsBasics extends Component {
   }
 }
 
-export  class  Abc extends Component {
+export  class  ABC extends Component {
     render() {
       return (
         <View>
