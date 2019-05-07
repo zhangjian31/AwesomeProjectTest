@@ -10,6 +10,7 @@ import CityList from './src/CityList';
 import First from './src/First';
 import {Abc} from './src/高度和宽度';
 import widthAndHeight from './src/高度和宽度';
+import 电影列表 from './src/电影列表';
 import {name as appName} from './app.json';
 
 
@@ -19,4 +20,6 @@ import {name as appName} from './app.json';
 // AppRegistry.registerComponent(appName, () => CityList); 
 // AppRegistry.registerComponent(appName, () => First); 
 // AppRegistry.registerComponent(appName, () => Abc); 
-AppRegistry.registerComponent(appName, () => widthAndHeight); 
+// AppRegistry.registerComponent(appName, () => widthAndHeight); 
+AppRegistry.registerComponent(appName, () => 电影列表); 
+
