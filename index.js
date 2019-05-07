@@ -38,7 +38,7 @@ import {name as appName} from './app.json';
 // AppRegistry.registerComponent(appName, () => TouchableOpacityCom); 
 // AppRegistry.registerComponent(appName, () => TextInputCom); 
 // AppRegistry.registerComponent(appName, () => ImageCom); 
-AppRegistry.registerComponent(appName, () => ScrollViewCom1); 
-// AppRegistry.registerComponent(appName, () => ScrollViewCom2); 
+// AppRegistry.registerComponent(appName, () => ScrollViewCom1); 
+AppRegistry.registerComponent(appName, () => ScrollViewCom2); 
 // AppRegistry.registerComponent(appName, () => ScrollViewDemo1); 
 
