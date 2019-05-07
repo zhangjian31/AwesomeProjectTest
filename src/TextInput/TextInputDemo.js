@@ -12,7 +12,7 @@ class TextInputCom extends Component {
     constructor(props) {
         super(props);
         this.state = { inputText: "constructor" };
-        this.getContent = this.getContent.bind(this);
+        // this.getContent = this.getContent.bind(this);
         this.clickBtn=this.clickBtn.bind(this);
     }  
     // componentDidMount(){
@@ -20,21 +20,30 @@ class TextInputCom extends Component {
     //         inputText:"componentDidMount"
     //     })
     // }
+    // getContent(text){
+    //     this.setState(() => {
+    //         return {
+    //             inputText: text
+    //         };
+    //     });
+    // };
+
     getContent(text){
-        this.setState(() => {
-            return {
-                inputText: text
-            };
-        });
-    };
-    getContent(text){
-        this.setState({
-            inputText:text
-        });
+            this.setState((state)=>{
+                return {inputText:text}
+            }
+        );
     }
+    // getContent(text){
+    //     this.setState({
+    //         inputText:text
+    //     });
+    // }
     clickBtn(){
         alert(this.state.inputText);
     }
+
+
     render(){
         return (
             <View style={styles.container}>
@@ -43,7 +52,9 @@ class TextInputCom extends Component {
                         style={styles.input} 
                         placeholder="请输入内容..." 
                         returnKeyType="search" 
-                        onChangeText={this.getContent}>
+                        // onChangeText={this.getContent}
+                        onChangeText={((text)=>this.getContent(text))}
+                        >
                     </TextInput>
                 </View>
                 <TouchableOpacity style={styles.btn} onPress={this.clickBtn}>
