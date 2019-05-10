@@ -6,7 +6,6 @@ import {
     View,
     ScrollView,
     Image,
-    TouchableOpacity,
 } from 'react-native';
 
 //从文件兑取数据，执行require方法自动执行JSON.parse()方法，将json格式的字符串转换为json格式的对象。
@@ -21,10 +20,10 @@ export default class ScrollViewDemo2 extends Component {
         for(var i in movies){
             var movie = movies[i];
             var row =(
-                <View style={styles.row } key={i}>
-                    <Image  style={styles.thumbnail } source={{uri:movie.posters.thumbnail}}/>
+                <View style={styles.row} key={i}>
+                    <Image  style={styles.thumbnail} source={{uri:movie.posters.thumbnail}}/>
                     <View style={styles.rightContainer }>
-                        <Text style={styles.title }>{movie.title}</Text>
+                        <Text style={styles.title}>{movie.title}</Text>
                         <Text style={styles.year }>{movie.year}</Text>
                     </View>
     
@@ -33,7 +32,7 @@ export default class ScrollViewDemo2 extends Component {
             movieRows.push(row);
         }
         return (
-            <View  style={styles.container } >
+            <View  style={styles.container} >
                 <ScrollView style={styles.scrollview } >
                     {
                         movieRows
@@ -51,21 +50,21 @@ const styles = StyleSheet.create({
     scrollview:{
         flex:1,
         marginTop:25,
-        backgroundColor:"#cccccc"
+        backgroundColor:"#DC1CD1"
     },
     row:{
         flexDirection:"row",
         padding:5,
         alignItems:"center",
-        backgroundColor:"yellow",
+        backgroundColor:"#D1C1D1",
     },
     thumbnail:{
-        width:100,
-        height:60,
+        width:53,
+        height:81,
         backgroundColor:"gray",
     },
     rightContainer:{
-        marginLeft=10,
+        marginLeft:10,
         flex:1,
     },
     title:{

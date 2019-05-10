@@ -20,12 +20,13 @@ import ImageCom from './src/Image/ImageDemo';
 import {ScrollViewCom1} from './src/ScrollView/ScrollViewEntry';
 import {ScrollViewCom2} from './src/ScrollView/ScrollViewEntry';
 import ScrollViewDemo1 from './src/ScrollView/ScrollViewDemo1';
+import ScreenCom from './src/ScreenTest';
 
 
 import {name as appName} from './app.json';
 
 
-// AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => App);
 // AppRegistry.registerComponent(appName, () => Test); 
 // AppRegistry.registerComponent(appName, () => StateTest); 
 // AppRegistry.registerComponent(appName, () => CityList); 
@@ -39,6 +40,6 @@ import {name as appName} from './app.json';
 // AppRegistry.registerComponent(appName, () => TextInputCom); 
 // AppRegistry.registerComponent(appName, () => ImageCom); 
 // AppRegistry.registerComponent(appName, () => ScrollViewCom1); 
-AppRegistry.registerComponent(appName, () => ScrollViewCom2); 
+// AppRegistry.registerComponent(appName, () => ScrollViewCom2); 
 // AppRegistry.registerComponent(appName, () => ScrollViewDemo1); 
-
+// AppRegistry.registerComponent(appName, () => ScreenCom); 

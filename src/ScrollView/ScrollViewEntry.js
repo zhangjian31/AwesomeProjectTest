@@ -22,8 +22,8 @@ export class ScrollViewCom1 extends Component {
 export class ScrollViewCom2 extends Component {
     render(){
         return (
-            <View  >
-                 <ScrollViewDemo2/>
+            <View  style={styles.container}>
+                 <ScrollViewDemo2 style={styles.container}/>
             </View>
         );
     };
